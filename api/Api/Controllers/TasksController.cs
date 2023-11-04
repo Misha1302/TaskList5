@@ -67,7 +67,7 @@ public class TasksController : ControllerBase
         return Results.Ok(taskDtos.ToList());
     }
 
-    [HttpPut]
+    [HttpPut("{id:int}")]
     public IResult UpdateTask(int taskId, [FromBody] EditTaskDto dto)
     {
         var task = _context.Tasks.FirstOrDefault(x => x.Id == taskId);
