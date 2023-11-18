@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task list</title>
+
+    <link href="main.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <h1>Task list</h1>
+    <form id="new-task-form">
+        <input
+                id="new-task-input"
+                placeholder="Enter message"
+                type="text"
+        />
+        <input
+                id="new-task-submit"
+                type="submit"
+                value="Add task"
+        />
+    </form>
+</header>
+
+<main>
+    <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+            <div class="task">
+                <div class="content">
+                    <input
+                            class="text"
+                            readonly
+                            type="text"
+                            value="Taskkkk"
+                    />
+                </div>
+
+
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
